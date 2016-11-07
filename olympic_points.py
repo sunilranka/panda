@@ -35,5 +35,8 @@ def numpy_dot():
     medal_matrix=[gold,silver,bronze]
     olympic_points= {'country_name':countries,"points":numpy.dot(point_system,medal_matrix)}
     olympic_points_df=DataFrame(olympic_points)
+    # Following code is alternative
+    #olympic_points_df = DataFrame({'country_name':countries, 'points':np.dot([4,2,1], [gold, silver, bronze])})
+ 
     
     return olympic_points_df
