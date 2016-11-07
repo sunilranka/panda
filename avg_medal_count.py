@@ -39,6 +39,9 @@ def avg_medal_count():
     # another alternative
     #df_avg=df[['gold','silver','bronze']]
     avg_medal_count=df_avg.apply(numpy.mean)
+
+    #below syntax would merge above two lines into one
+    #avg_medal_count=df[['gold','silver','bronze']].apply(numpy.mean)
     
     return avg_medal_count
 
